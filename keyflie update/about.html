@@ -55,7 +55,8 @@
     background-color: var(--white);
     margin: 0;
     padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: '{{PrimaryFont}}';
 }
 
 svg {
@@ -63,10 +64,10 @@ svg {
     height: 20px;
 }
 :root {
-    --primary-color: #040D12;
-    --second-color: #183D3D;
-    --third-color:#5C8374;
-    --fourth-color:#93B1A6;
+    --black: #040D12;
+    --primary-color: {{PrimaryColor}};
+    --second-color:{{SecondaryColor}};
+    /* --second-color:#93B1A6; */
     --white: #ffffff;
     --bgcolor: #cfe9e0;
     --primary-font: 'Rubik', sans-serif;
@@ -106,12 +107,12 @@ svg {
     width: 100%;
     padding: 25px 0;
     transition: all 0.3s ease;
-    background-color: var(--second-color);
+    background-color: var(--primary-color);
 }
 
 .navbar.sticky {
     padding: 10px 0;
-    background: var(--second-color);
+    background: var(--primary-color);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -146,7 +147,7 @@ svg {
 }
 
 .menu-list li a:hover {
-    color: var(--fourth-color);
+    color: var(--second-color);
 }
 
 .about {
@@ -214,7 +215,7 @@ svg {
         left: 0;
         height: 100vh;
         width: 100%;
-        background: var(--second-color);
+        background: var(--primary-color);
         display: block;
         padding: 40px 0;
         text-align: center;
@@ -246,7 +247,7 @@ svg {
 .ab{
     width: 100%;
     height: 100px;
-    background-color: var(--fourth-color);
+    background-color: var(--second-color);
     font-size: 35px;
     text-align: center;
     padding-top: 40px;
@@ -622,13 +623,13 @@ svg {
     margin-top: 80px;
 }
 .mt-4{
-    background-color: var(--primary-color);
+    background-color: var(--black);
 }
 .row-1{
-    background-color: var(--fourth-color);
+    background-color: var(--second-color);
 }
 .row{
-    /* background-color: var(--fourth-color); */
+    /* background-color: var(--second-color); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -658,7 +659,9 @@ svg {
     font-size: 26px;
     margin-bottom: 20px;
 }
-
+.col-lg-3 p{
+    text-decoration: underline;
+}
 .col-lg-3 img{
     padding: 39px;
 }
@@ -670,15 +673,15 @@ svg {
     margin: 10px 0;
     font-size: 16px;
    width: fit-content;
-   background-color:var(--primary-color);
+   background-color:var(--black);
    color:var(--white);
    border-radius: 15px;
    padding: 7px 25px;
 }   
 .btn2:hover{
     cursor: pointer;
-   background-color: var(--fourth-color);
-   color: var(--primary-color);
+   background-color: var(--second-color);
+   color: var(--black);
 }
 .phone{
     display: flex;
@@ -717,7 +720,7 @@ svg {
 .sosmed-button a{
     text-decoration: none;
     padding-left: 10px;
-    fill: var(--fourth-color);
+    fill: var(--second-color);
 }
 .sosmed-button a:hover{
     fill: var(--white);
